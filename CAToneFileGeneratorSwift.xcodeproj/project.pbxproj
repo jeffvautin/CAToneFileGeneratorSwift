@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7A51E18E1C2A6A0B008B1768 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A51E18D1C2A6A0B008B1768 /* main.swift */; };
+		7A51E1971C2A6D8D008B1768 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A51E1961C2A6D8D008B1768 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		7A51E18A1C2A6A0B008B1768 /* CAToneFileGeneratorSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CAToneFileGeneratorSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A51E18D1C2A6A0B008B1768 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7A51E1961C2A6D8D008B1768 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A51E1971C2A6D8D008B1768 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +44,7 @@
 		7A51E1811C2A6A0B008B1768 = {
 			isa = PBXGroup;
 			children = (
+				7A51E1961C2A6D8D008B1768 /* AudioToolbox.framework */,
 				7A51E18C1C2A6A0B008B1768 /* CAToneFileGeneratorSwift */,
 				7A51E18B1C2A6A0B008B1768 /* Products */,
 			);
