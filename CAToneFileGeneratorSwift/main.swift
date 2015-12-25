@@ -20,7 +20,7 @@ if (Process.argc < 2) {
 
 let hz = (Process.arguments[1] as NSString).doubleValue
 assert(hz > 0)
-print("generating %f hz tone", hz)
+print(String(format: "generating %f hz tone", arguments: [hz]))
 
 let fileName = NSString(format: FILENAME_FORMAT, hz)
 let filePath = (NSFileManager.defaultManager().currentDirectoryPath as NSString).stringByAppendingPathComponent(fileName as String)
@@ -75,4 +75,4 @@ while (sampleCount < maxSampleCount) {
 
 audioErr = AudioFileClose(audioFile)
 assert(audioErr == noErr)
-print("wrote %ld samples", sampleCount)
+print(String(format: "wrote %ld samples", arguments: [sampleCount]))
